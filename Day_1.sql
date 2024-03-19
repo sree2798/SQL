@@ -53,6 +53,7 @@ select distinct city from station where left(city,1) in ('a','e','i','o','u');
 SELECT DISTINCT city 
 FROM station WHERE city REGEXP '^[aeiouAEIOU]';
 --or 
+-- try with substring concept
 
 
 
@@ -63,6 +64,8 @@ select distinct city from station where right(city,1) in ('a','e','i','o', 'u');
 --or
 SELECT DISTINCT city 
 FROM station WHERE city REGEXP '[aeiouAEIOU]$';
+--or 
+--try with substring concept
 
 
 --problem 12
@@ -73,6 +76,8 @@ select distinct city from station where (left(city,1) in ('a','e','i','o','u') a
 right(city,1) in ('a','e','i','o', 'u'));
 -- or
 SELECT DISTINCT city FROM station WHERE city REGEXP '^[aeiouAEIOU].*[aeiouAEIOU]$';
+-- or 
+-- try with substring concept
 
 --problem 13
 --Query the list of CITY names from STATION that do not start with vowels. 
@@ -81,6 +86,8 @@ select distinct city from station where
 left(city,1) not in ('a','e','i','o','u');
 --or 
 select distinct city from station where city not regexp '^[aeiou]';
+--or
+--try with substring concept
 
 --problem 14
 --Query the list of CITY names from STATION that do not end with vowels. 
