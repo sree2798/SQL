@@ -6,4 +6,4 @@ This repository contains my SQL exposure and my hands-on with SQL problems from 
 20th March - Practiced few more queries on hackerrank
 Learnt new functions like substring(), replace(), truncate(), round(), avg(), count(), sum()
 Got familiar with  CASE statement syntax and learnt how to write conditions using CASE statement 
-
+22nd march - 
