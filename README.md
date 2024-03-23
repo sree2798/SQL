@@ -9,4 +9,16 @@ Learnt new functions like substring(), replace(), truncate(), round(), avg(), co
 
 Got familiar with  CASE statement syntax and learnt how to write conditions using CASE statement 
 
-22nd march - 
+21st march - Went through theory concepts on how subqueries work and learnt about virtual tables 
+
+22nd march - got hands on with functions such as round(), floor(), truncate() and understood how they are different
+from each other after seeing a couple of failed test cases 
+
+23rd march- leveled up to medium level problems on hackerrank and got hands dirty with concepts like 
+
+window functions such as rank(), dense_rank(), row_number()
+
+learnt the syntax of the above function
+
+Joins and functions such as sqrt(), pow()
+
