@@ -22,3 +22,5 @@ learnt the syntax of the above function
 
 Joins and functions such as sqrt(), pow()
 
+25th march:
+learnt CTEs and how to use them in panning out complex queries , it was a rough patch but I managed to understand things
