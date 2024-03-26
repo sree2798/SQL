@@ -24,3 +24,7 @@ Joins and functions such as sqrt(), pow()
 
 25th march:
 learnt CTEs and how to use them in panning out complex queries , it was a rough patch but I managed to understand things
+
+26th , got confident on using CTEs and Sub queries with some of the best problems in hackerrank medium level
+
+learnt about lead() and lag() functions and how do they help to access the consecutive row values 
