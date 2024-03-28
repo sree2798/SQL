@@ -28,3 +28,7 @@ learnt CTEs and how to use them in panning out complex queries , it was a rough 
 26th , got confident on using CTEs and Sub queries with some of the best problems in hackerrank medium level
 
 learnt about lead() and lag() functions and how do they help to access the consecutive row values 
+
+
+27th - Spent the whole time today on single hard level problem from hackerrank. the problem mainly
+focused on Joins, Subquery, Group by, Having
