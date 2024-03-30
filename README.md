@@ -33,4 +33,6 @@ learnt about lead() and lag() functions and how do they help to access the conse
 27th - Spent the whole time today on single hard level problem from hackerrank. the problem mainly
 focused on Joins, Subquery, Group by, Having
 
-28th - started doing leetcode easy level problems 
+28th - started doing leetcode easy level problems , learnt how to 
+
+29th- SQL 50  interview list
