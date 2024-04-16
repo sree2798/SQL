@@ -36,3 +36,7 @@ focused on Joins, Subquery, Group by, Having
 28th - started doing leetcode easy level problems , learnt how to 
 
 29th- SQL 50  interview list
+
+April 15th - after a rough week (literally went broke and stopped having sleep and food on time), 
+
+I gathered myself together and did couple pf leetcode problems on self join.
