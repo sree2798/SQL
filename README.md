@@ -40,3 +40,5 @@ focused on Joins, Subquery, Group by, Having
 April 15th - after a rough week (literally went broke and stopped having sleep and food on time), 
 
 I gathered myself together and did couple pf leetcode problems on self join.
+
+April 18th - back to the track and did 5 leetcode problems. learnt coalesce() function and how it replaces "null" with zeros 
