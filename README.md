@@ -46,3 +46,7 @@ April 18th - back to the track and did 5 leetcode problems. learnt coalesce() fu
 substring_index() opened my eyes really wide today
 
 GROUP_CONCAT() solved all my confusion while using group by()
+
+Also, learnt about using 
+MATCH  column_name  AGAINST ('+keyword  +keyword' IN BOOLEAN MODE)  in   WHERE conditions
+(this is for searching for different keywords in the content of a single row)
