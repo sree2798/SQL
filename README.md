@@ -42,3 +42,5 @@ April 15th - after a rough week (literally went broke and stopped having sleep a
 I gathered myself together and did couple pf leetcode problems on self join.
 
 April 18th - back to the track and did 5 leetcode problems. learnt coalesce() function and how it replaces "null" with zeros 
+
+substring_index() opened my eyes really wide today
