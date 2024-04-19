@@ -397,3 +397,169 @@ Israel comes before Egypt because it has more bronze medals.
 select * from Olympic order by gold_medals desc, silver_medals desc,
 bronze_medals desc, country asc; 
 /*
+Table: Emails
+
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| email       | varchar |
++-------------+---------+
+id is the primary key (column with unique values) for this table.
+Each row of this table contains an email. The emails will not contain uppercase letters.
+Write a solution to find all unique email domains and count the number of individuals associated with each domain. Consider only those domains that end with .com.
+
+Return the result table orderd by email domains in ascending order.
+
+The result format is in the following example.
+
+ 
+
+Example 1:
+
+Input: 
+Emails table:
++-----+-----------------------+
+| id  | email                 |
++-----+-----------------------+
+| 336 | hwkiy@test.edu        |
+| 489 | adcmaf@outlook.com    |
+| 449 | vrzmwyum@yahoo.com    |
+| 95  | tof@test.edu          |
+| 320 | jxhbagkpm@example.org |
+| 411 | zxcf@outlook.com      |
++----+------------------------+
+Output: 
++--------------+-------+
+| email_domain | count |
++--------------+-------+
+| outlook.com  | 2     |
+| yahoo.com    | 1     |  
++--------------+-------+
+Explanation: 
+- The valid domains ending with ".com" are only "outlook.com" and "yahoo.com", with respective counts of 2 and 1.
+Output table is ordered by email_domains in ascending order.
+*/
+select substring_index(email,"@",-1) as email_domain , count(id) as count from emails 
+where right(email,4)=".com"
+group by substring_index(email,"@",-1) order by substring_index(email,"@",-1) asc;
+/*
+Table: Triangles
+
++-------------+------+ 
+| Column Name | Type | 
++-------------+------+ 
+| A           | int  | 
+| B           | int  |
+| C           | int  |
++-------------+------+
+(A, B, C) is the primary key for this table.
+Each row include the lengths of each of a triangle's three sides.
+Write a query to find the type of triangle. Output one of the following for each row:
+
+Equilateral: It's a triangle with 3 sides of equal length.
+Isosceles: It's a triangle with 2 sides of equal length.
+Scalene: It's a triangle with 3 sides of differing lengths.
+Not A Triangle: The given values of A, B, and C don't form a triangle.
+Return the result table in any order.
+
+The result format is in the following example.
+
+ 
+
+Example 1:
+
+Input: 
+Triangles table:
++----+----+----+
+| A  | B  | C  |
++----+----+----+
+| 20 | 20 | 23 |
+| 20 | 20 | 20 |
+| 20 | 21 | 22 |
+| 13 | 14 | 30 |
++----+----+----+
+Output: 
++----------------+
+| triangle_type  | 
++----------------+
+| Isosceles      | 
+| Equilateral    |
+| Scalene        |
+| Not A Triangle |
++----------------+
+Explanation: 
+- Values in the first row from an Isosceles triangle, because A = B.
+- Values in the second row from an Equilateral triangle, because A = B = C.
+- Values in the third row from an Scalene triangle, because A != B != C.
+- Values in the fourth row cannot form a triangle, 
+because the combined value of sides A and B is not larger than that of side C.
+*/
+select 
+case when  ((A+B<=C) OR (B+C<=A) OR (C+A)<=B) then "Not A Triangle"
+     when ((A=B) AND (B=C) AND (C=A)) then "Equilateral"
+     when ((A!=B) and (B!=C)  and (C!=A)) then "Scalene"
+     else "Isosceles"
+end as triangle_type
+from Triangles;
+/*Table: Candidates
+
++--------------+---------+ 
+| Column Name  | Type    | 
++--------------+---------+ 
+| candidate_id | int     | 
+| skill        | varchar |
++--------------+---------+
+(candidate_id, skill) is the primary key (columns with unique values) for this table.
+Each row includes candidate_id and skill.
+Write a query to find the candidates best suited for a Data Scientist position. The candidate must be proficient in Python, Tableau, and PostgreSQL.
+
+Return the result table ordered by candidate_id in ascending order.
+
+The result format is in the following example.
+
+ 
+
+Example 1:
+
+Input: 
+Candidates table:
++---------------+--------------+
+| candidate_id  | skill        | 
++---------------+--------------+
+| 123           | Python       |
+| 234           | R            | 
+| 123           | Tableau      | 
+| 123           | PostgreSQL   | 
+| 234           | PowerBI      | 
+| 234           | SQL Server   | 
+| 147           | Python       | 
+| 147           | Tableau      | 
+| 147           | Java         |
+| 147           | PostgreSQL   |
+| 256           | Tableau      |
+| 102           | DataAnalysis |
++---------------+--------------+
+Output: 
++--------------+
+| candidate_id |  
++--------------+
+| 123          |  
+| 147          | 
++--------------+
+Explanation: 
+- Candidates 123 and 147 possess the necessary skills in Python, Tableau, and PostgreSQL for the data scientist position.
+- Candidates 234 and 102 do not possess any of the required skills for this position.
+- Candidate 256 has proficiency in Tableau but is missing skills in Python and PostgreSQL.
+The output table is sorted by candidate_id in ascending order.
+*/
+SELECT t1.candidate_id 
+FROM (
+    SELECT candidate_id, GROUP_CONCAT(skill) AS skill 
+    FROM candidates 
+    GROUP BY candidate_id
+) AS t1 
+WHERE 
+    t1.skill LIKE '%Python%' 
+    AND t1.skill LIKE '%Tableau%' 
+    AND t1.skill LIKE '%PostgreSql%';
