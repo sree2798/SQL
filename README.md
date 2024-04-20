@@ -56,6 +56,10 @@ are detected by mysql  as table names that are to be used to joins
 
 Also, I learnt how to use CAST() function to change the data type of a column and cast as a required data type
 
+And, when I am trying to write queries with CTE, I am often confused with the syntax. just faced a run time errror for a simple problem using CTE s
+
+
+
 April 20th, - One more concept I learned today was, when using Group By() and we are grouping on the basis of a column ,
 if the corresponding values in another column are integers, we can compare those values and extract minimum or maximum. 
 After extracting the maximum or minimum,we can compare the minimum or maximum to a value to check a condition. 
