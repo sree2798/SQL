@@ -50,3 +50,9 @@ GROUP_CONCAT() solved all my confusion while using group by()
 Also, learnt about using 
 MATCH  column_name  AGAINST ('+keyword  +keyword' IN BOOLEAN MODE)  in   WHERE conditions
 (this is for searching for different keywords in the content of a single row)
+
+April 20th - realized that if we don't use ` ` in aliases while using joins, there is a chance that these names 
+are detected by mysql  as table names that are to be used to joins
+
+Also, I learnt how to use CAST() function to change the data type of a column and cast as a required data type
+
