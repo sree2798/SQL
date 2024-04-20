@@ -63,3 +63,8 @@ And, when I am trying to write queries with CTE, I am often confused with the sy
 April 20th, - One more concept I learned today was, when using Group By() and we are grouping on the basis of a column ,
 if the corresponding values in another column are integers, we can compare those values and extract minimum or maximum. 
 After extracting the maximum or minimum,we can compare the minimum or maximum to a value to check a condition. 
+
+
+Also, when I am trying to compare the values of a column with the values of another column in the same table , 
+it is not always mandatory to use self join , we can us the IN operator and a Subquery (refer to the problem 
+"Employees whose managers left the company"
