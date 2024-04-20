@@ -68,3 +68,7 @@ After extracting the maximum or minimum,we can compare the minimum or maximum to
 Also, when I am trying to compare the values of a column with the values of another column in the same table , 
 it is not always mandatory to use self join , we can us the IN operator and a Subquery (refer to the problem 
 "Employees whose managers left the company"
+
+
+few problems on date time functions and also timestampdiff() function, need to invest time on this and understand 
+learn to write conditions using time stamps correctly
