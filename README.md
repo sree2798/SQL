@@ -72,3 +72,5 @@ it is not always mandatory to use self join , we can us the IN operator and a Su
 
 few problems on date time functions and also timestampdiff() function, need to invest time on this and understand 
 learn to write conditions using time stamps correctly
+
+after a rough patch of 3 days with no github contributions, started again doing the rest of the leetcode easy level problems
