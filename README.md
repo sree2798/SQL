@@ -74,3 +74,6 @@ few problems on date time functions and also timestampdiff() function, need to i
 learn to write conditions using time stamps correctly
 
 after a rough patch of 3 days with no github contributions, started again doing the rest of the leetcode easy level problems
+
+April 27th - Learnt about IFNULL() function and how it can replace null value with a numerical value, had a rough patch of 5 wrong submissions 
+just because I am not aware of this function. 
