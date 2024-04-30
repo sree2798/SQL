@@ -77,3 +77,7 @@ after a rough patch of 3 days with no github contributions, started again doing 
 
 April 27th - Learnt about IFNULL() function and how it can replace null value with a numerical value, had a rough patch of 5 wrong submissions 
 just because I am not aware of this function. 
+
+April 30th - Learnt how to use CASE statement while using group by to filter values in each single group
+
+
