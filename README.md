@@ -81,3 +81,5 @@ just because I am not aware of this function.
 April 30th - Learnt how to use CASE statement while using group by to filter values in each single group
 
 learnt how to use procedures and their syntax. solved a leetcode problem using procedures. 
+
+DATEFORMAT() function to format the date into required format
