@@ -83,3 +83,7 @@ April 30th - Learnt how to use CASE statement while using group by to filter val
 learnt how to use procedures and their syntax. solved a leetcode problem using procedures. 
 
 DATEFORMAT() function to format the date into required format
+
+DATEDIFF() function to find the difference between two dates , difference is 1 if the first date is greater than second date 
+difference is -1 if the first date is less than second date 
+
