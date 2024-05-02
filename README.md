@@ -87,3 +87,5 @@ DATEFORMAT() function to format the date into required format
 DATEDIFF() function to find the difference between two dates , difference is 1 if the first date is greater than second date 
 difference is -1 if the first date is less than second date 
 
+learnt and got clarity on the rank() function in MySQL, particularly on the partition by syntax, earlier i was skeptical on this
+
