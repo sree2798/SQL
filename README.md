@@ -84,6 +84,8 @@ learnt how to use procedures and their syntax. solved a leetcode problem using p
 
 DATEFORMAT() function to format the date into required format
 
+applied the concept of running scores using sum() over function while solving game play analysis 3 problem
+
 DATEDIFF() function to find the difference between two dates , difference is 1 if the first date is greater than second date 
 difference is -1 if the first date is less than second date 
 
