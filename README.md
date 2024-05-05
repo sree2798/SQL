@@ -102,3 +102,5 @@ DATE_SUB("2023-06-15 10:34:28", INTERVAL 15 MINUTE)
 output: "2023-06-15 10:19:28"
 DATE_SUB("2023-06-15", INTERVAL -2 MONTH)
 output: "2023-08-15"
+
+SEC_TO_TIME() function converts the seconds to format HH:MM:SS
