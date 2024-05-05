@@ -92,3 +92,13 @@ difference is -1 if the first date is less than second date
 learnt and got clarity on the rank() function in MySQL, particularly on the partition by syntax, earlier i was skeptical on this
 
 learnt about dayofweek() function while solving a leetcode problem
+
+DATE_SUB() function, 
+let's take a closer look at this, DATE_SUB("2024-05-05",INTERVAL 10 DAY)
+this function essentially subtracts the interval from the given date and returns the final date, in this case, the final date would be 
+"2024-04-25"
+similar flavours of this function:
+DATE_SUB("2023-06-15 10:34:28", INTERVAL 15 MINUTE)
+output: "2023-06-15 10:19:28"
+DATE_SUB("2023-06-15", INTERVAL -2 MONTH)
+output: "2023-08-15"
