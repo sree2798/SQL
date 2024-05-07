@@ -104,3 +104,5 @@ DATE_SUB("2023-06-15", INTERVAL -2 MONTH)
 output: "2023-08-15"
 
 SEC_TO_TIME() function converts the seconds to format HH:MM:SS
+
+learnt about ceil() function and how it helps to create intervals and after creating intervals, subsequently we can group on that column which has intervals 
