@@ -102,4 +102,6 @@ output: "2023-08-15"
 
 SEC_TO_TIME() function converts the seconds to format HH:MM:SS
 
-learnt about ceil() function and how it helps to create intervals and after creating intervals, subsequently we can group on that column which has intervals 
+learnt about ceil() function and how it helps to create intervals and after creating intervals, subsequently we can group on that column which has intervals
+
+learnt about UNION ALL while solving a leetcode problem. I was stuck when there were two CTE s and how I would join them , then UNION ALL helped me to resolve my problem 
